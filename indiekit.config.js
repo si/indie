@@ -49,7 +49,7 @@ module.exports = {
    * See: https://getindiekit.com/configuration/#publication
    */ 
   publication: {
-    me: "WEBSITE_URL",
+    me: "https://indie-si.netlify.app",
     postTypes: postTypes,
   },
   /**
@@ -59,9 +59,9 @@ module.exports = {
    * See: https://getindiekit.com/plugins/stores
    */
   "@indiekit/store-github": {
-    user: "GITHUB_USERNAME",
-    repo: "GITHUB_REPOSITORY",
-    branch: "GITHUB_BRANCH",
+    user: "si",
+    repo: "indie",
+    branch: "main",
     token: process.env.GITHUB_TOKEN
   },
   /**
@@ -73,8 +73,8 @@ module.exports = {
   "@indiekit/syndicator-mastodon": {
     checked: true,
     forced: true,
-    url: "MASTODON_SERVER",
-    user: "MASTODON_USERNAME",
+    url: "https://managingengineers.net",
+    user: "si",
     accessToken: process.env.MASTODON_ACCESS_TOKEN
   },
 };
